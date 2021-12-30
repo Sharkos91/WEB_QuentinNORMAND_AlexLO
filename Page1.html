@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link rel="stylesheet" href="Page1.css">
+	<title>Commande en ligne</title>
+</head>
+	<header>
+		<div class="banniere">
+			<img src="Images/logoefrei.png" alt= »logo»  width="380" height="180" >
+			<h1>REST'EFREI</h1>
+		</div>
+		<div class="menu">
+			<a href="PageAccueil.html">Page d'Accueil</a>
+            <a>|</a>
+            <a href="Page1.html">Passer Commande</a>
+            <a>|</a>
+            <a href="Page2.html">Nos Réservations</a>
+            <a>|</a>
+            <a href="Page3.html">Page Commentaire</a>
+		</div>		
+	</header>
+
+<body>
+	<main>
+        <form name="reservation" onsubmit="return false">
+            <h2>Passer Commande ICI</h2>
+            <p>
+                <label for="nom">Nom</label><br>
+                <input type="text" id="nom" name="nom">
+            </p>
+            <p>
+                <label for="prenom">Prénom</label><br>
+                <input type="text" id="prenom" name="prenom">
+            </p>
+            <p>
+                <label for="adresse">Adresse mail EFREI</label><br>
+                <input type="text" id="adresse" name="adresse">
+            </p>
+            <p>
+                <label for="telephone">Téléphone</label><br>
+                <input type="text" id="telephone" name="telephone">
+            </p>
+            <p>Jour: 
+                <select name="jour">
+                    <option selected>
+                        Lundi
+                    </option>
+                    <option>
+                        Mardi
+                    </option>
+                    <option>
+                        Mercredi
+                    </option>
+                    <option>
+                        Jeudi
+                    </option>
+                    <option>
+                        Vendredi
+                    </option>
+                </select>
+            </p>
+            <p>
+                Nombre de personnes: 
+                <select name="nbPersonnes">
+                    <option selected>
+                        1
+                    </option>
+                    <option>
+                        2
+                    </option>
+                    <option>
+                        3
+                    </option>
+                    <option>
+                        4
+                    </option>
+                </select>
+            </p>
+            <p style="display:inline">Mode de paiement : </p>
+            <label for="place">Carte Bancaire</label>
+            <input type="radio" id="carte" name="paiement" value="Carte Bancaire">
+            <label for="ligne">Espèce</label>
+            <input type="radio" id="espece" name="paiement" value="Espèce">
+            <br/>
+            <br/>
+            <button onclick="ajouter()">Réserver</button>
+            <button type="reset">Annuler</button>
+        </form>
+        <br>
+        
+        <table class="reserve" id="tableReservation">
+            <tr>
+                <td>Nom</td>
+                <td>Prénom</td>
+                <td>Adresse mail</td>
+                <td>Téléphone</td>
+                <td>Jour</td>
+                <td>Nombre de Personnes</td>
+                <td>Paiement</td>
+            </tr>
+            
+        </table>
+
+    </main>
+    <footer>
+		<a href="PagePropos.html">Nous Contacter</a>
+		<a>|</a>
+		<a href="PagePropos.html">à propos</a>
+	</footer>
+
+    <script>
+        function ajouter(){
+            var reserveForm = document.forms.reservation;
+            var nom = reserveForm.elements.nom.value;
+            var prenom = reserveForm.elements.prenom.value;
+            var adresse = reserveForm.elements.adresse.value;
+            var telephone = reserveForm.elements.telephone.value;
+            var jour = reserveForm.elements.jour.value;
+            var nbPersonnes = reserveForm.elements.nbPersonnes.value;
+            var paiement = reserveForm.elements.paiement.value;
+            if(nom == "" || prenom == "" || adresse == "" || telephone == "" || paiement == ""){
+                alert("Remplissez l'entièreté du formulaire");
+            }
+            else{
+                var tdNom = document.createElement("td");
+                tdNom.textContent = nom;
+                var tdPrenom = document.createElement("td");
+                tdPrenom.textContent = prenom;
+                var tdAdresse = document.createElement("td");
+                tdAdresse.textContent = adresse;
+                var tdTelephone = document.createElement("td");
+                tdTelephone.textContent = telephone;
+                var tdJour = document.createElement("td");
+                tdJour.textContent = jour;
+                var tdNbPersonnes = document.createElement("td");
+                tdNbPersonnes.textContent = nbPersonnes;
+                var tdPaiement = document.createElement("td");
+                tdPaiement.textContent = paiement;
+                var tr1 = document.createElement("tr");
+                tr1.append(tdNom);
+                tr1.append(tdPrenom);
+                tr1.append(tdAdresse);
+                tr1.append(tdTelephone);
+                tr1.append(tdJour);
+                tr1.append(tdNbPersonnes);
+                tr1.append(tdPaiement);
+                document.getElementById("tableReservation").appendChild(tr1);
+            }
+        }
+    </script>
+</body>
+
+</html>
