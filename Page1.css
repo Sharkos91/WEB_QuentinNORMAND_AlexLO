@@ -1,3 +1,11 @@
+body { 
+	background-color:#306090;
+	color:#ffffff; 
+	font-family:"Trebuchet MS"; 
+	margin:auto; 
+	margin-bottom: 60px; 
+}
+
 header{
 	background-color: rgb(41, 41, 243);
 }
@@ -14,14 +22,6 @@ h1{
 .banniere > img{
 	margin-left: 20px;
 	margin-right: 20px;
-}
-
-body { 
-background-color:#306090;
-color:#ffffff; 
-font-family:"Trebuchet MS"; 
-margin:auto; 
-margin-bottom: 60px; 
 }
 /*
 #page 
@@ -61,7 +61,6 @@ a{
 	height: 20px;
 }
 
-
 h2{
 	border: 2px solid white;
 	/*border-collapse: collapse;*/
@@ -87,7 +86,8 @@ button:hover{
 	margin-right: 10px;
 	height: 20px;
 	justify-content: center;
-}	
+}
+
 table,th,td{
 	border: 2px solid black;
 	border-radius: 5px;
@@ -97,6 +97,7 @@ table,th,td{
 	margin-right: 20px;
 	text-align: center
 }
+
 td{
 	color: black;
 	padding-right: 20px;
@@ -104,8 +105,8 @@ td{
 	margin: auto;
 	width: 5%
 }
+
 form{
 	padding-left: 30px;
-
 }
 
