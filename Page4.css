@@ -7,18 +7,19 @@ h1{
 	box-shadow: 15px 16px 5px black;
 	font-size: 100px;
 }
+
 header{
-	background-color: navy;
-}
-body 
-{ 
-background-color:#306090; 
-color:#ffffff; 
-font-family:"Trebuchet MS"; 
-margin:auto; 
-margin-bottom: 60px; 
+	background-color: rgb(138, 214, 138);
 }
 
+body{ 
+	background-color:#0b917a;
+	color:#ffffff; 
+	font-family:"Trebuchet MS"; 
+	margin:auto; 
+	margin-bottom: 60px; 
+}
+/*
 #page 
 { 
 color:#000000; 
@@ -28,11 +29,11 @@ background-repeat:no-repeat;
 min-height:20em; 
 height:55em; 
 }
-
+*/
 footer{
 	bottom: 0;
 	position: fixed;
-	background-color: navy;
+	background-color: rgb(125, 172, 16);
 	width: 100%;
 	height: 50px;
 	display: flex;
@@ -47,6 +48,7 @@ div{
   	margin: auto;
 }
 a{
+	font-weight: bold;
 	text-align: center;
 	color: white;
 	background-color: navy;
