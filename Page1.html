@@ -87,7 +87,8 @@
             <br/>
             <br/>
             <button onclick="ajouter()">Réserver</button>
-            <button onclick="supprimer()">Annuler</button>
+            <button onclick="supprimer()">Supprimer votre réservation</button>
+            <button onclick="annuler()">Annuler</button>
         </form>
         <br>
 
@@ -150,8 +151,13 @@
                 document.getElementById("tableReservation").appendChild(tr1);
             }
         }
+        var parent = document.getElementById("tableReservation").getElementsByTagName("tr")[0];
+        var child = parent.getElementsByTagName("td");
         function supprimer(){
-            document.getElementById("tableReservation").removeChild(tr);
+            var removed = parent.removeChild(child);
+        }
+        function annuler(){
+            parent.appendChild(removed);
         }
     </script>
 </body>
