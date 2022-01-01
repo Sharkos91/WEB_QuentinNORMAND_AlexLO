@@ -38,6 +38,7 @@
             
             <br/><button onclick="ajouter()">Ajouter</button>
             <button onclick="afficherCom()">Afficher les commentaires</button>
+            <button onclick="cacherCom()">Cacher les commentaires</button>
         </form>
         <br>
         <div id="Com-table" class="Com-table">
@@ -60,34 +61,36 @@
 	</footer>
 
     <script>
-    var e1 = document.getElementById('Com-table');    
-    e1.style.display = 'none';
-    function afficherCom(){
-  		e1.style.display = 'block';}
-    function startTime(){
-		var today = new Date();
-		alert("Ouverture de la page à : "+today.getHours()+"h "+today.getMinutes()+"min "+today.getSeconds()+"sec");
-	}
-       function ajouter(){
-            var reserveForm = document.forms.reservation;
-            var nom = reserveForm.elements.nom.value;
-            var avis = reserveForm.elements.avis.value;
-            
-            if(nom == "" || avis == ""){
-                alert("Remplissez l'entièreté du formulaire");
-            }
-            else{
-                var tdNom = document.createElement("td");
-                tdNom.textContent = nom;
-                var tdAvis = document.createElement("td");
-                tdAvis.textContent = avis;
-                var tr1 = document.createElement("tr");
-                tr1.append(tdNom);
-                tr1.append(tdAvis);
+        var e1 = document.getElementById('Com-table');    
+        e1.style.display = 'none';
+        function afficherCom(){
+              e1.style.display = 'block';}
+        function cacherCom(){
+            e1.style.display = 'none';}    
+        function startTime(){
+            var today = new Date();
+            alert("Ouverture de la page à : "+today.getHours()+"h "+today.getMinutes()+"min "+today.getSeconds()+"sec");
+        }
+           function ajouter(){
+                var reserveForm = document.forms.reservation;
+                var nom = reserveForm.elements.nom.value;
+                var avis = reserveForm.elements.avis.value;
                 
-                document.getElementById("tableReservation").appendChild(tr1);
-            }
-            }       
+                if(nom == "" || avis == ""){
+                    alert("Remplissez l'entièreté du formulaire");
+                }
+                else{
+                    var tdNom = document.createElement("td");
+                    tdNom.textContent = nom;
+                    var tdAvis = document.createElement("td");
+                    tdAvis.textContent = avis;
+                    var tr1 = document.createElement("tr");
+                    tr1.append(tdNom);
+                    tr1.append(tdAvis);
+                    
+                    document.getElementById("tableReservation").appendChild(tr1);
+                }
+                }       
     </script>
 </body>
 
