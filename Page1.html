@@ -87,7 +87,7 @@
             <br/>
             <br/>
             <button onclick="ajouter()">Réserver</button>
-            <button type="reset">Annuler</button>
+            <button onclick="supprimer()">Annuler</button>
         </form>
         <br>
 
@@ -149,6 +149,9 @@
                 tr1.append(tdPaiement);
                 document.getElementById("tableReservation").appendChild(tr1);
             }
+        }
+        function supprimer(){
+            document.getElementById("tableReservation").removeChild(tr1);
         }
     </script>
 </body>
