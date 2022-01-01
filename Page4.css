@@ -55,3 +55,28 @@ a{
 	margin-right: 10px;
 	height: 20px;
 }
+table, tr ,td{
+	border: 3px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+table{
+	margin: auto;
+}
+tr, td{
+	padding: 30px;
+}
+h4{
+	text-align: center;
+	font-size: 70px;
+}
+h3,h2{
+	font-size: 50px;
+}
+p{
+	font-size: 30px;
+}
+td{
+	width: 180px;
+	height: 80px;
+}
