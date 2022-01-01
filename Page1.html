@@ -154,7 +154,8 @@
         function supprimer(){
             var parent = document.getElementById('tableReservation');
             var child = parent.getElementsByTagName('tr');
-            var removed = parent.removeChild(child[1]);
+            var rowCount = child.length;
+            var removed = parent.removeChild(child[rowCount-1]);
         }
         function Allsupprimer(){
             var parent = document.getElementById('tableReservation');
