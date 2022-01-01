@@ -151,6 +151,8 @@
                 document.getElementById("tableReservation").appendChild(tr1);
             }
         }
+        var parent = document.getElementById("tableReservation").getElementsByTagName("table")[1];
+        var child = parent.getElementsByTagName("tr")[1];
         function supprimer(){
             var removed = tbody.removeChild();
         }
