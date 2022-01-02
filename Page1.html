@@ -89,7 +89,7 @@
             <br/>
             <br/>
             <button class="commande" onclick="ajouter()">Réserver</button>
-            <button class="commande" onclick="supprimer()">Supprimer votre réservation</button>
+            <button class="commande" onclick="supprimer()">Supprimer une réservation</button>
             <button class="commande" onclick="Allsupprimer()">TOUT Supprimer</button>
         </form>
 
@@ -155,16 +155,19 @@
         function supprimer(){
             var parent = document.getElementById('tableReservation');
             var child = parent.getElementsByTagName('tr');
-            var rowCount = child.length;
-            var removed = parent.removeChild(child[rowCount-1]);
+            var rowCount = window.prompt("Quelle est la réservation que vous souhaitez supprimer ? (Ecrivez un nombre de minimum 1)");
+            rowCount = parseInt(rowCount);
+            var removed = parent.removeChild(child[rowCount]);
         }
         function Allsupprimer(){
-            var parent = document.getElementById('tableReservation');
-            var child = parent.getElementsByTagName('tr');
-            var rowCount = child.length;
-
-            for (var x=rowCount-1; x>0; x--) {
-            parent.removeChild(child[x]);}
+            if (confirm("Voulez-vous vraiment supprimer toutes vos réservations ?")){
+                var parent = document.getElementById('tableReservation');
+                var child = parent.getElementsByTagName('tr');
+                var rowCount = child.length;
+                
+                for (var x=rowCount-1; x>0; x--) {
+                parent.removeChild(child[x]);}
+            }
         }
 
     </script>
