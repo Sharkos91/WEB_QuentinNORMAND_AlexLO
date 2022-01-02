@@ -186,6 +186,7 @@ h2.accueil{
     margin: 20px;
     border-radius: 20px;
     flex-flow: column wrap;
+	box-shadow: 20px 15px 4px rgb(73, 71, 71);
 }
 
 .menusem{
