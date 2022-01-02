@@ -46,7 +46,7 @@ h1{
 footer{
 	bottom: 0;
 	position: fixed;
-	background-color: rgb(108, 148, 13);
+	background-color: rgb(106, 180, 106);
 	width: 100%;
 	height: 40px;
 	display: flex;
@@ -72,6 +72,7 @@ button.commande{
 	border-radius: 5px;
 	background-color: white;
 	margin-right: 20px;
+    margin-bottom: 10px;
 	box-shadow: 2px 2px 2px black;
     font-size: 20px;
     padding: 5px;
@@ -100,6 +101,6 @@ button.commande:hover{
 }
 
 form.reservation{
-    margin: 20px 10px 50px 30px;
+    margin: 20px 10px 40px 30px;
     float:left;
 }
