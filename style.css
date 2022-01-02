@@ -147,9 +147,14 @@ h2.accueil{
 	background-color: rgb(212, 255, 212);
 }
 
-h3,h4{
+.reditalic{
 	padding-left: 50px;
 	font-size: 60px;
+	font-style: italic;
+}
+
+.reditalic::first-letter{
+	color:red;
 	font-style: italic;
 }
 
@@ -162,11 +167,6 @@ h3,h4{
 	margin-left: 100px;
 	margin-right: 100px;
 	font-size: 25px;
-}
-
-h3::first-letter,h4::first-letter{
-	color:red;
-	font-style: italic;
 }
 
 .propos{
@@ -185,4 +185,15 @@ h3::first-letter,h4::first-letter{
     margin: 20px;
     border-radius: 20px;
     flex-flow: column wrap;
+}
+
+.menusem{
+    margin: 20px 10px 20px 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+table.com2 > div{
+    background-color:rgb(206, 43, 43);
+    font-size: 50px;
 }
