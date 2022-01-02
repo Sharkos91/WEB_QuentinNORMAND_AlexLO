@@ -8,4 +8,98 @@ body{
 
 header{
 	background-color: rgb(138, 214, 138);
+    border-radius: 50px;
+    margin: 10px 20px 0px 20px;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+}
+
+header > div{
+    flex-flow: row wrap;
+}
+
+h1{
+	text-align: center ;
+	background-color: #17d120;
+	border : 3px solid black;
+	margin: 20px 20px 20px 20px;
+	box-shadow: 15px 16px 5px black;
+	font-size: 100px;
+}
+
+.banniere > img{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.banniere, .menu{
+	flex-flow: row wrap;
+	width: 90%;
+}
+
+footer{
+	bottom: 0;
+	position: fixed;
+	background-color: rgb(108, 148, 13);
+	width: 100%;
+	height: 40px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+a{
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	margin:10px 5px 5px 5px;
+	height: 20px;
+    text-shadow: 3px 3px 4px black;
+}
+
+h2.commande{
+	margin: 20px 30px 20px 0px;
+}
+
+button.commande{
+	border: hidden;
+	border-radius: 5px;
+	background-color: white;
+	margin-right: 20px;
+	box-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    padding: 5px;
+}
+
+button.commande:hover{
+	background-color: rgb(21, 231, 21);
+}
+
+#tableReservation, #tableReservation tr, #tableReservation td{
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: white;
+	border-collapse: collapse;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+#tableReservation td{
+	color: black;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin: auto;
+	width: 5%
+}
+
+form.reservation{
+    margin: 20px 30px;
+    float:left;
 }

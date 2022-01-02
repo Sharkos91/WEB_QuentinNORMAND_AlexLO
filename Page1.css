@@ -47,12 +47,12 @@ footer{
 }
 
 div{
-  	display: flex;
+	display: flex;
 	flex-flow: row wrap;
- 	align-items: center;
-  	justify-content: center;
-  	padding: auto;
-  	margin: auto;
+	align-items: center;
+	justify-content: center;
+	padding: auto;
+	margin: auto;
 }
 
 a{
@@ -81,16 +81,16 @@ button:hover{
 	background-color: rgb(21, 231, 21);
 }
 
-.lien{
+/* .lien{
 	text-align: center;
 	color: white;
 	background-color: navy;
 	margin-right: 10px;
 	height: 20px;
 	justify-content: center;
-}
+} */
 
-table,th,td{
+table,tr,td{
 	border: 2px solid black;
 	border-radius: 5px;
 	background-color: white;

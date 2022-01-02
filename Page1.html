@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="UTF-8">
     <link rel="shortcut icon" href="Images/ICONE.png" type="image/png">
-    <link rel="stylesheet" href="Page1.css">
+    <!-- <link rel="stylesheet" href="Page1.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Passer Commande</title>
 </head>
 
 <body>
     <header>
         <div class="banniere">
-            <img src="Images/logoefrei.png" alt= »logo»  width="456" height="180" >
+            <img src="Images/logoefrei.png" alt= »logo» height="180">
             <h1>REST'EFREI</h1>
         </div>
         <div class="menu">
@@ -25,8 +27,8 @@
         </div>  
     </header>
 	<main>
-        <form name="reservation" onsubmit="return false">
-            <h2>Passer Commande ICI</h2>
+        <form class="reservation" name="reservation" onsubmit="return false">
+            <h2 class="commande">Passer Commande ICI</h2>
             <p>
                 <label for="nom">Nom</label><br/>
                 <input type="text" id="nom" name="nom">
@@ -86,13 +88,13 @@
             <input type="radio" id="espece" name="paiement" value="Espèce">
             <br/>
             <br/>
-            <button onclick="ajouter()">Réserver</button>
-            <button onclick="supprimer()">Supprimer votre réservation</button>
-            <button onclick="Allsupprimer()">TOUT Supprimer</button>
+            <button class="commande" onclick="ajouter()">Réserver</button>
+            <button class="commande" onclick="supprimer()">Supprimer votre réservation</button>
+            <button class="commande" onclick="Allsupprimer()">TOUT Supprimer</button>
         </form>
         <br>
 
-        <table class="reserve" id="tableReservation">
+        <table id="tableReservation">
             <tr>
                 <td>Nom</td>
                 <td>Prénom</td>
