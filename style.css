@@ -78,7 +78,7 @@ button:hover{
 	background-color: rgb(21, 231, 21);
 }
 
-#tableReservation, #tableReservation tr, #tableReservation td{
+.tab1, .tab1 tr, .tab1 td{
 	border: 2px solid black;
 	border-radius: 5px;
 	background-color: white;
@@ -88,7 +88,7 @@ button:hover{
 	text-align: center;
 }
 
-#tableReservation td{
+.tab1 td{
 	color: black;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -103,6 +103,7 @@ form.reservation{
 
 h2.recette{
 	text-align: center;
+	margin-top: 50px;
 }
 
 .VRE{
@@ -193,7 +194,10 @@ h2.accueil{
     text-align: center;
 }
 
-table.com2 > div{
-    background-color:rgb(206, 43, 43);
-    font-size: 50px;
+.plats td{
+    background-color:rgb(230, 96, 96);
+}
+
+.jours td{
+	background-color: rgb(20, 220, 210);
 }
