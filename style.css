@@ -8,6 +8,7 @@ body{
 
 header{
 	background-color: rgb(138, 214, 138);
+    outline:2px dashed black;
     border-radius: 50px;
     margin: 10px 20px 0px 20px;
 }
